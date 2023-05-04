@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appBarHeaderHeading">Happy Birthday</string>
+    <string name="firstOptionSelectedHeader">Poetries</string>
+    <string name="secondOptionSeceltedheader">Personal Message</string>
+</resources>

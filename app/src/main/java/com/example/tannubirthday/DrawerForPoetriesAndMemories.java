@@ -49,7 +49,7 @@ public class DrawerForPoetriesAndMemories extends AppCompatActivity {
 
 //      setting up drawer on the layout.
         Dialog dialog = new Dialog(DrawerForPoetriesAndMemories.this);
-        toolbar.setTitle("Happy Birthday");
+        toolbar.setTitle(R.string.appBarHeaderHeading);
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.openDrawer, R.string.closeDrawer);
@@ -83,7 +83,7 @@ public class DrawerForPoetriesAndMemories extends AppCompatActivity {
 
 //              dedicated to poetry layout frames, animations.
                 if(ids == R.id.poetriesOpt){
-                    toolbar.setTitle("Poetries");
+                    toolbar.setTitle(R.string.firstOptionSelectedHeader);
 //                  showing dialogbox for checking if the birthday/boy/girl is opening the app.
 
                     if(passwordEnteredInPoetry == false){
@@ -94,7 +94,7 @@ public class DrawerForPoetriesAndMemories extends AppCompatActivity {
                         btn.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                if(password1.getText().toString().equals("123") && password2.getText().toString().equals("vishal")){
+                                if(password1.getText().toString().equals(R.string.PoetrySectionNumericPassword) && password2.getText().toString().equals(R.string.PoetrySectionTextPassword)){
 //                              showing you are correct animation
                                     passwordAnimation.setAnimation(R.raw.success_tick);
                                     passwordAnimation.playAnimation();
@@ -130,14 +130,14 @@ public class DrawerForPoetriesAndMemories extends AppCompatActivity {
 
 //              this entire code is for the second option that is perosnal message section.
                 else if(ids == R.id.mymessageopt){
-                    toolbar.setTitle("My Message");
+                    toolbar.setTitle(R.string.secondOptionSeceltedheader);
                     if(passwordEnteredInPersonal == false){
                         dialog.show();
                         text.setText(R.string.PersonalMessageSectionPermission);
                         btn.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                if(password1.getText().toString().equals("0210") && password2.getText().toString().equals("tyagi")){
+                                if(password1.getText().toString().equals(R.string.MessageSectionNumericPassword) && password2.getText().toString().equals(R.string.MessageSectionTextPassword)){
 //                              showing you are correct animation
                                     passwordAnimation.setAnimation(R.raw.success_tick);
                                     passwordAnimation.playAnimation();
@@ -170,7 +170,7 @@ public class DrawerForPoetriesAndMemories extends AppCompatActivity {
 
                 else{
                     Intent iDial = new Intent(Intent.ACTION_DIAL);
-                    iDial.setData(Uri.parse("tel: +919210763630"));
+                    iDial.setData(Uri.parse("tel: "+R.string.mobileNumber));
                     startActivity(iDial);
                 }
 
