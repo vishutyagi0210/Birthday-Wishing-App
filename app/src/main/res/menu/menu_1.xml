@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Poetries"
+        android:id="@+id/poetriesOpt"
+        android:icon="@drawable/baseline_menu_book_24"/>
+    <item android:title="My Message"
+        android:id = "@+id/mymessageopt"
+        android:icon="@drawable/baseline_message_24"/>
+    <item android:title = "Call me"
+        android:id = "@+id/callMe"
+        android:icon="@drawable/baseline_call_24"/>
+
+</menu>

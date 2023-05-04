@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+
+    <androidx.cardview.widget.CardView
+        android:id = "@+id/parentCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#EDBFF4">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/happy_birthday"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/SplashScreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/splash_screen" />
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/SplashScreen"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

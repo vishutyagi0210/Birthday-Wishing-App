@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PoetrySectionPermissionText">To access the Poetry section, you must either be the birthday person (name) or have the necessary authorization from the birthday person to view the section.</string>
+    <string name="PersonalMessageSectionPermission">To access the Personal message section, you must either be the birthday person (name) or have the necessary authorization from the birthday person to view the section.</string>
+</resources>

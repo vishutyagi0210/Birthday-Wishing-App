@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Happy\nBirthday</string>
+    <string name="happy_birthday">𝐻𝑎𝑝𝑝𝑦 𝐵𝑖𝑟𝑡ℎ𝑑𝑎𝑦 𝑁𝑎𝑚𝑒 𝑆𝑢𝑟𝑛𝑎𝑚𝑒</string>
+    <string name="activityOneText">NAME</string>
+    <string name="wishes">𝑤𝑖𝑠ℎ𝑖𝑛𝑔 𝑦☯𝑢 𝑎 𝑣𝑒𝑟𝑦 ℎ𝑎𝑝𝑝𝑦 𝑏𝑖𝑟𝑡ℎ𝑑𝑎𝑦, 𝑙𝑖𝑘𝑒𝑑 𝑤𝑖𝑡ℎ 𝑙😍𝑣𝑒, 𝑙𝑎𝑢𝑔ℎ𝑡𝑒𝑟 𝑎𝑛𝑑 𝑗🌞𝑦. m𝑎𝑦 𝑦𝑜𝑢𝑟 𝑏𝑖𝑟𝑡ℎ𝑑𝑎𝑦 𝑏𝑒 𝑎𝑠 𝑤𝑜𝑛𝑑𝑒𝑟𝑓𝑢𝑙 𝑎𝑠 𝑦☯𝑢 𝑎𝑟𝑒, ℎ𝑎𝑣𝑎 𝑎 𝑓𝑎𝑛𝑡𝑎𝑠𝑡𝑖𝑐 𝑑𝑎𝑦🌷.</string>
+    <string name="defaultWishes">Press the Heart</string>
+</resources>

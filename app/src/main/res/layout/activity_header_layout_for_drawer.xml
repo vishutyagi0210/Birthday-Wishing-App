@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleX="5"
+        android:src="@drawable/gradient_background_effect" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/userAnimationLottie"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="65dp"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/profile_icon_animation" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="230dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/userAnimationLottie"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ring_animation" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userAnimationLottie"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="-56dp"
+        android:text="@string/underProfileName"
+        android:textSize="25dp" />
+
+</RelativeLayout>

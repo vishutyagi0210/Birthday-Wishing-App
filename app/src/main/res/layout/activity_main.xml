@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D5C1F8">
+
+
+    <androidx.cardview.widget.CardView
+        android:id = "@+id/imageCardView"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/largeCircle"
+        app:cardCornerRadius="13dp">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id = "@+id/lottie_animation_for_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:lottie_rawRes="@raw/song_waves"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="false"
+            />
+
+        <TextView
+            android:id = "@+id/cardViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:text="@string/defaultWishes"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id = "@+id/mainBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src = "@drawable/gradient_background_effect"
+        android:scaleX="2"/>
+
+    <ImageView
+        android:id = "@+id/largeCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/large_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id = "@+id/smallAndMediumCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/small_medium_circles"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id = "@+id/fadecircle"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src = "@drawable/fadecircle"
+        android:layout_centerHorizontal="true"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mainBackground"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="14dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id = "@+id/bottomBackground"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:src="@drawable/upper_image_on_backgroung"
+                android:scaleX="2"/>
+
+
+            <TextView
+                android:id="@+id/BirthdayPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activityOneText"
+                android:textColor="#A276EF"
+                android:textSize="40dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="30dp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id = "@+id/lottieAnimationWithText"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                app:lottie_rawRes="@raw/circles_lottie_animation"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="false"
+                android:layout_below="@+id/BirthdayPersonName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"/>
+
+
+            <ImageView
+                android:id = "@+id/activityMainHeartIconImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart_icon_default"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                />
+
+            <TextView
+                android:id = "@+id/textViewForLyrics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@id/activityMainHeartIconImage"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textColor="#8F5BEC"/>
+
+
+            <Button
+                android:id = "@+id/forwardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="𝑀𝑜𝑣𝑒 𝑓𝑜𝑟𝑤𝑎𝑟𝑑"
+                android:layout_alignBottom="@id/bottomBackground"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#7C47DA"
+                android:alpha="0.7"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id = "@+id/nextPageLoadingAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/forwardButton"
+                android:layout_centerHorizontal="true"
+                app:lottie_rawRes="@raw/loading_animation"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

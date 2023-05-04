@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentPoetry1">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id = "@+id/cardviewIntoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="50dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="#E7AFF1">
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/diamondfloat"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id = "@+id/firstpoem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "@string/firstPoem"
+                android:layout_marginLeft="16dp"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstpoem"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/juggling_animation"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
